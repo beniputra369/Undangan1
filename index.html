@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #1a0a2e, #2d1b69);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: linear-gradient(145deg, #fff9f0, #fff3e0);
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      border: 2px solid #d4a843;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -50px; left: -50px;
+      width: 150px; height: 150px;
+      background: radial-gradient(circle, rgba(212,168,67,0.2), transparent);
+      border-radius: 50%;
+    }
+    .ornamen { font-size: 28px; color: #d4a843; margin-bottom: 10px; }
+    .bismillah {
+      font-size: 13px;
+      color: #8b6914;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+    .judul {
+      font-size: 13px;
+      color: #555;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .nama-acara {
+      font-size: 32px;
+      color: #2d1b69;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .sub {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 20px;
+    }
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 15px 0;
+    }
+    .divider hr { flex: 1; border: none; border-top: 1px solid #d4a843; }
+    .divider span { color: #d4a843; font-size: 18px; }
+    .mempelai {
+      margin: 15px 0;
+    }
+    .nama {
+      font-size: 26px;
+      color: #2d1b69;
+      font-weight: bold;
+    }
+    .anak {
+      font-size: 12px;
+      color: #777;
+      margin-top: 3px;
+    }
+    .dan {
+      font-size: 20px;
+      color: #d4a843;
+      margin: 8px 0;
+      font-style: italic;
+    }
+    .info-box {
+      background: linear-gradient(135deg, #2d1b69, #1a0a2e);
+      color: white;
+      border-radius: 12px;
+      padding: 18px;
+      margin: 20px 0;
+    }
+    .info-box .label {
+      font-size: 11px;
+      color: #d4a843;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    .info-box .value {
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .info-box .value2 {
+      font-size: 13px;
+      color: #ccc;
+      margin-top: 3px;
+    }
+    .footer {
+      font-size: 12px;
+      color: #999;
+      margin-top: 20px;
+      font-style: italic;
+    }
+    .bunga { font-size: 22px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="ornamen">✦ ✦ ✦</div>
+    <div class="bismillah">Bismillahirrahmanirrahim</div>
+    <div class="judul">Undangan Pernikahan</div>
+
+    <div class="divider">
+      <hr><span>🌸</span><hr>
+    </div>
+
+    <div class="mempelai">
+      <div class="nama">Ahmad Rizki</div>
+      <div class="anak">Putra dari Bapak Hasan & Ibu Sari</div>
+      <div class="dan">& </div>
+      <div class="nama">Siti Rahayu</div>
+      <div class="anak">Putri dari Bapak Doni & Ibu Wati</div>
+    </div>
+
+    <div class="divider">
+      <hr><span>💍</span><hr>
+    </div>
+
+    <div class="info-box">
+      <div class="label">📅 Hari & Tanggal</div>
+      <div class="value">Sabtu, 21 Juni 2025</div>
+      <div style="height:12px"></div>
+      <div class="label">⏰ Waktu</div>
+      <div class="value">08.00 - Selesai</div>
+      <div style="height:12px"></div>
+      <div class="label">📍 Tempat</div>
+      <div class="value">Gedung Serbaguna Indah</div>
+      <div class="value2">Jl. Mawar No. 10, Jakarta</div>
+    </div>
+
+    <div class="footer">
+      Merupakan suatu kehormatan bagi kami<br>
+      apabila Bapak/Ibu/Saudara berkenan hadir.<br><br>
+      <span class="bunga">🌺 🌸 🌺</span>
+    </div>
+  </div>
+</body>
+</html>
